@@ -55,8 +55,8 @@ def clean_content():
 # ---------- DAG DEFINITION ----------
 with DAG(
     dag_id="process_reviews_dag",
-    start_date=datetime(2024, 1, 1),
-    schedule=None,
+    start_date=datetime(2026, 2, 26),
+    schedule="@once",
     catchup=False,
     tags=["reviews", "processing"],
 ) as dag:

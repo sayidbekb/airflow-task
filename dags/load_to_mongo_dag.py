@@ -25,7 +25,7 @@ def load_to_mongo():
 
 with DAG(
     dag_id="load_to_mongo_dag",
-    start_date=datetime(2024, 1, 1),
+    start_date=datetime(2026, 2, 26),
     schedule=[processed_dataset],  # 🔥 dataset-triggered
     catchup=False,
     tags=["reviews", "mongo"],
